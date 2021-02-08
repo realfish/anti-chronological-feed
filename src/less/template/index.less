@@ -15,10 +15,16 @@
 	transform: translateY(-50%);
 	display  : inline-flex;
 	padding  : 0 30%;
+	opacity  : 0;
+	transition: opacity 1s ease-in .5s;
 
 	@media screen and (max-height: 360px) {
 		top      : unset;
 		transform: unset;
+	}
+	
+	&.is-finished {
+		opacity: 1;
 	}
 }
 .timeline-item {
@@ -70,7 +76,58 @@
 	font-weight       : 400;
 	letter-spacing    : 0.25em;
 }
-/*--- End ---*/
+
+// Loader
+@timeline-loader-diameter: 0.6em;
+@keyframes timeline-loader {
+	0%,
+	80%,
+	100% {
+		box-shadow: 0 @timeline-loader-diameter 0 (-@timeline-loader-diameter/2);
+	}
+	40% {
+		box-shadow: 0 @timeline-loader-diameter 0 0;
+	}
+}
+.timeline-loader,
+.timeline-loader:before,
+.timeline-loader:after {
+	width              : @timeline-loader-diameter;
+	height             : @timeline-loader-diameter;
+	animation-fill-mode: both;
+	animation          : timeline-loader 1.6s infinite ease-in-out;
+}
+.timeline-loader {
+	position       : fixed;
+	top            : 50%;
+	left           : 50%;
+	transform      : translate(-50%, -50%);
+	display        : block;
+	color          : @pantone-2016-b;
+	font-size      : 10px;
+	transform      : translateZ(0);
+	animation-delay: -0.16s;
+	opacity        : .75;
+	transition     : opacity 1s ease-in;
+
+	&.is-finished {
+		opacity: 0;
+	}
+}
+.timeline-loader:before,
+.timeline-loader:after {
+	content : '';
+	position: absolute;
+	top     : 0;
+}
+.timeline-loader:before {
+	left: (-@timeline-loader-diameter*3);
+	animation-delay: -0.32s;
+}
+.timeline-loader:after {
+	left: (@timeline-loader-diameter*3);
+}
+/*--- Timeline End ---*/
 
 /*--- Note ---*/
 aside {
@@ -109,7 +166,19 @@ aside {
 	p + p {
 		margin-block-start: 10px;
 	}
-
+	
+	@media screen and (min-width: 721px) {
+		&::before {
+			content      : "";
+			position     : absolute;
+			z-index      : -@zIndex-1;
+			top          : 0;
+			right        : 0;
+			width        : 648px;
+			height       : 187px;
+			border-bottom: .5px solid @pantone-2016-a;
+		}
+	}
 	@media screen and (max-width: 720px) {
 		&::before {
 			content      : "";
