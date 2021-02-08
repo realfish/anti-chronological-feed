@@ -1,0 +1,97 @@
+/**
+ * Color palette
+ */
+
+@bg-main:     hsl(0, 0%, 100%);
+@bg-sub:      hsl(0, 0%, 93%);
+@bg-black:    hsl(0, 0%, 0%);
+
+@text-main:   hsl(0, 0%, 20%);
+@text-dark:   hsl(0, 0%, 15%);
+@text-light:  hsl(0, 0%, 50%);
+@text-white:  hsl(0, 0%, 100%);
+@text-black:  hsl(0, 0%, 0%);
+
+@yellow-main: #ffef3d;
+
+@theme: @yellow-main;
+
+@pantone-2016-a: #f7cac9;
+@pantone-2016-b: #92a8d1;
+@pantone-2016:   linear-gradient(to top, @pantone-2016-a, @pantone-2016-b);
+@pantone-2016o:  linear-gradient(to left, @pantone-2016-a, @pantone-2016-b);
+
+
+
+/**
+ * Border preset
+ */
+
+@thinline: 1px solid fadeout(@text-main, 85%);
+
+
+
+/**
+ * Font
+ */
+
+/*====== Chinese punctuation optimization ======*/
+@font-face {
+	font-family: "Punct Hei Body";
+	font-weight: 400;
+	src: local("PingFang SC"), local("PingFang SC Regular"), local("Hiragino Sans GB"), local("Hiragino Sans GB W3"), local("Heiti SC"), local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("NSimSun"), local("SimSun");
+	unicode-range: U+002D, U+002F, U+2013, U+2014, U+00B7, U+2026, U+201C, U+201D;
+	/*
+		hyphen,
+		solidus,
+		en dash,
+		em dash,
+		middle dot,
+		ellipsis,
+		left double quotes,
+		right doubel quotes
+	*/
+}
+@font-face {
+	font-family: "Punct Song Body";
+	// font-weight: 400;
+	src: local("STSongti-SC-Regular"), local("PingFang SC"), local("PingFang SC Regular"), local("Heiti SC"), local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("SimSun");
+	unicode-range: /* U+002F,  */U+2014, /* U+00B7, */ /* U+2026, U+201C, U+201D */;
+	/*
+		solidus,
+		em dash,
+		middle dot,
+		ellipsis,
+		left double quotes,
+		right doubel quotes
+	*/
+}
+/*====== Chinese punctuation optimization END ======*/
+
+@font-fb-sans : -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Arial;
+@font-fb-hei  : "PingFang SC", "Microsoft YaHei UI", "Microsoft YaHei";
+@font-fb-serif: Times, "Times New Roman";
+@font-fb-song : "Source Han Serif", "Songti SC", NSimSun, SimSun;
+
+@font-sans : @font-fb-sans, sans-serif;
+@font-serif: @font-fb-serif, serif;
+@font-hei  : /* "Punct Hei Body",  */@font-fb-sans, @font-fb-hei, sans-serif;
+@font-song : /* "Punct Song Body",  */minion-pro, @font-fb-serif, source-han-serif-sc, @font-fb-song, serif;
+
+@font-code: fira-mono, Consolas, Menlo, monospace, monospace;
+
+
+/**
+ * Z-index
+ */
+
+@zIndex-0: 0;
+@zIndex-1: 100;
+@zIndex-2: 200;
+@zIndex-3: 300;
+@zIndex-4: 400;
+@zIndex-5: 500;
+@zIndex-6: 600;
+@zIndex-7: 700;
+@zIndex-8: 800;
+@zIndex-9: 900;
