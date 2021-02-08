@@ -1,0 +1,6 @@
+<% for (var i = 0; i < items.length; i++) { %>
+	<a class="timeline-item" href="<%= items[i].link %>">
+		<h3 class="timeline-title"><%= items[i].title %></h3>
+		<div class="timeline-date"><%= items[i].date %></div>
+	</a>
+<% } %>

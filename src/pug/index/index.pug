@@ -1,0 +1,32 @@
+extends ../_template
+
+block var
+	- const assetsPath = "./"
+	- const pageTitl = "An anti-chronological feed" + ""
+	- const bodyClass = "index"
+	- let bodyClassModifier = ""
+	//--- Data
+
+block headScripts
+	script.
+		/* Source Han Serif */
+		(function(d) {
+			var config = {
+				kitId: 'fff4fmj',
+				scriptTimeout: 3000,
+				async: true
+			},
+			h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+		})(document);
+	//- include data/gon
+
+block mainBody
+	include module/body
+
+block bodyFooter
+	include module/aside
+	include module/footer
+
+block template
+	script#tmpl-timeline(type="text/x-lodash-template")
+		include template/timeline.html
