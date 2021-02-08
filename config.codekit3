@@ -15,6 +15,14 @@
 		"oAP": "/docs/docs",
 		"oF": 0
 		},
+	"/README.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/README.txt",
+		"oF": 1
+		},
 	"/src/assets/android-touch-icon-hd.png": {
 		"ft": 32768,
 		"iS": 5749,
@@ -182,7 +190,7 @@
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
-		"mi": 0,
+		"mi": 1,
 		"oA": 0,
 		"oAP": "/docs/assets/libs.js",
 		"oF": 3,
@@ -259,7 +267,7 @@
 		"bF": 4,
 		"ft": 64,
 		"ma": 0,
-		"mi": 0,
+		"mi": 1,
 		"oA": 0,
 		"oAP": "/docs/assets/app.js",
 		"oF": 3,
@@ -315,12 +323,12 @@
 		"eJ": 0,
 		"ft": 1,
 		"iI": 0,
-		"ma": 1,
+		"ma": 0,
 		"mS": 0,
 		"oA": 0,
 		"oAP": "/docs/assets/app.css",
 		"oF": 3,
-		"oS": 0,
+		"oS": 1,
 		"rwU": 0,
 		"sI": 0,
 		"sU": 1
@@ -443,7 +451,7 @@
 		"oA": 0,
 		"oAP": "/docs/index.html",
 		"oF": 3,
-		"oS": 0
+		"oS": 1
 		},
 	"/src/pug/index/module/aside.pug": {
 		"cB": 0,
@@ -494,7 +502,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "logo-react",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 634484402.36170197
+	"lastBuiltDate": 634493057.40613699
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
