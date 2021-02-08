@@ -20,6 +20,9 @@ axios.get(API_FEED)
 .then(res => res.data)
 .then(data => new win.DOMParser().parseFromString(data, "text/xml"))
 .then(feedDoc => {
+	let $loader = doc.querySelector('.timeline-loader');
+	$loader.classList.add('is-finished');
+	
 	// console.log(feedDoc);
 	let $allItems = feedDoc.querySelectorAll('item');
 	let dataItems = [];
@@ -56,6 +59,8 @@ axios.get(API_FEED)
 	// .renderHanging()
 	.renderJiya()
 	.renderHWS();
+	
+	$timeline.classList.add('is-finished');
 });
 
 Han(doc.querySelector('.note'))
