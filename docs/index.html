@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <title>An anti-chronological feed</title>
+    <meta name="title" content="An anti-chronological feed">
+    <meta name="description" content="An anti-chronological feed">
+    <meta name="keywords" content="timeline,feed,chronological,typography,chinese,grid">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-title" content="鱼缸">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png?v=0.1.0">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/apple-touch-icon-ipad.png?v=0.1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon-iphone-retina.png?v=0.1.0">
+    <link rel="apple-touch-icon" sizes="167x167" href="./assets/apple-touch-icon-ipad-retina.png?v=0.1.0">
+    <link rel="icon" sizes="128x128" href="./assets/android-touch-icon.png?v=0.1.0">
+    <link rel="icon" sizes="192x192" href="./assets/android-touch-icon-hd.png?v=0.1.0">
+    <link rel="shortcut icon" href="./assets/favicon.ico?v=0.1.0">
+    <link rel="stylesheet" href="./assets/app.css?v=0.1.0">
+    <script>
+      /* Source Han Serif */
+      (function(d) {
+      	var config = {
+      		kitId: 'fff4fmj',
+      		scriptTimeout: 3000,
+      		async: true
+      	},
+      	h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+  </head>
+  <body class="index">
+    <main role="main">
+      <div class="timeline"></div>
+    </main>
+    <aside>
+      <article class="note">
+        <p>逆序时间线（<span lang="en">reverse-chronological feed</span>）的垂直展开是一种单极的信息架构。它设立了由上至下的次序规则，标准化了阅读方向。</p>
+        <p>左起横排、向下递进既是多数数码媒介的中文书写模式，也是多数通用浏览设备的默认布局及交互。</p>
+        <p>此种模式下，水平的左端对应着垂直的顶端——同时标示着起点的位置。由此，水平展开、行文竖排的中文逆序时间线得以为阅读的方向构造出一项冲突——在从左至右铺开的时间线上，每一个节点内部的文本则须从右至左阅读。</p>
+        <p>竖排中文从右至左递进书写的传统，暗示了时间线的另一种方向、另一个端点，单极化的结构开始松动。逆序时间线这一趋于严谨乃至标准化的信息架构内部萌生了反顺序（<span lang="en">anti-chronological</span>）。</p>
+      </article>
+    </aside>
+    <footer class="footer"><a class="footer-item" href="https://laerhsif.com">
+        <p class="footer-item-detail">© 2021 鱼缸</p></a><a class="footer-item" href="https://hanzi.pro">
+        <p class="footer-item-detail">Microtypography based on 漢字標準格式</p></a><a class="footer-item" href="&#109;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#x71;&#x40;&#108;&#x61;&#x65;&#x72;&#x68;&#115;&#105;&#102;&#46;&#99;&#111;&#109;">
+        <p class="footer-item-detail">&#113;&#x40;&#108;&#97;&#x65;&#x72;&#x68;&#x73;&#105;&#x66;&#x2e;&#99;&#111;&#109;</p></a><a class="footer-item" href="https://qingmang.me">
+        <p class="footer-item-detail">Feed from 轻芒</p></a></footer>
+    <script id="tmpl-timeline" type="text/x-lodash-template"><% for (var i = 0; i < items.length; i++) { %>
+	<a class="timeline-item" href="<%= items[i].link %>">
+		<h3 class="timeline-title"><%= items[i].title %></h3>
+		<div class="timeline-date"><%= items[i].date %></div>
+	</a>
+<% } %>
+    </script>
+    <script type="text/javascript" src="./assets/libs.js?v=0.1.0"></script>
+    <script type="text/javascript" src="./assets/han-min.js?v=0.1.0"></script>
+    <script type="text/javascript" src="./assets/app.js?v=0.1.0"></script>
+  </body>
+</html>
