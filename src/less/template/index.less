@@ -79,14 +79,16 @@ aside {
 	top     : 0;
 	left    : 0;
 	right   : 0;
+	height  : 190px;
+	overflow: hidden;
 }
 .note {
 	writing-mode        : vertical-rl;
 	overflow-x          : scroll;
 	width               : 100%;
-	inline-size         : (12px * (13.5 + 2) + 2);
+	inline-size         : (12px * (14.5 + 2) + 2);
 	padding-inline-start: 3em;
-	padding-inline-end  : 1.5em;
+	padding-inline-end  : 2.5em;
 	padding-block-start : 2.5em;
 	padding-block-end   : 2.5em;
 	box-sizing          : border-box;
@@ -114,9 +116,10 @@ aside {
 			position     : absolute;
 			z-index      : -@zIndex-1;
 			top          : 0;
-			bottom       : 0;
+			// bottom       : 0;
 			left         : 0;
 			right        : 2.5em;
+			height       : 187px;
 			border-bottom: .5px solid @pantone-2016-a;
 		}
 	}
@@ -201,5 +204,4 @@ aside {
 		transform       : translateY(-50%) rotateZ(45deg);
 	}
 }
-
 /*--- Footer END ---*/
