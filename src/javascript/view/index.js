@@ -39,7 +39,7 @@ axios.get(API_FEED)
 		
 		let item = {
 			title: $item.querySelector('title').textContent,
-			link: $item.querySelector('guid').textContent,
+			link: $item.querySelector('link').textContent,
 			date: dateY + dateM + dateD,
 		};
 		dataItems.push(item);
