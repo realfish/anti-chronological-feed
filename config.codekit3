@@ -7,8 +7,14 @@
       "uuidString" : "619E31A2-956A-4BAA-A2D2-6032A9F119B9"
     }
   ],
-  "creatorBuild" : "34018",
+  "creatorBuild" : "34081",
   "files" : {
+    "\/.github" : {
+      "ft" : 65536,
+      "oA" : 1,
+      "oAP" : "\/docs\/.github",
+      "oF" : 0
+    },
     "\/.gitignore" : {
       "cB" : 0,
       "ft" : 8192,
@@ -16,6 +22,12 @@
       "oA" : 1,
       "oAP" : "\/docs\/.gitignore",
       "oF" : 1
+    },
+    "\/backup" : {
+      "ft" : 65536,
+      "oA" : 1,
+      "oAP" : "\/docs\/backup",
+      "oF" : 0
     },
     "\/design" : {
       "ft" : 65536,
@@ -536,7 +548,7 @@
     "displayValueWasSetByUser" : 1,
     "iconImageName" : "logo-react",
     "iconImageWasSetByUser" : 1,
-    "lastBuiltDate" : 637239938.655159
+    "lastBuiltDate" : 648185957.58425701
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -2568,21 +2580,21 @@
 
       ],
       "contentEntries" : [
-        "!(node_modules)\/**\/*.html",
-        "!(node_modules)\/**\/*.htm",
-        "!(node_modules)\/**\/*.shtml",
-        "!(node_modules)\/**\/*.xhtml",
-        "!(node_modules)\/**\/*.php",
-        "!(node_modules)\/**\/*.js",
-        "!(node_modules)\/**\/*.ts",
-        "!(node_modules)\/**\/*.coffee",
-        "!(node_modules)\/**\/*.erb",
-        "!(node_modules)\/**\/*.pug",
-        "!(node_modules)\/**\/*.jade",
-        "!(node_modules)\/**\/*.slim",
-        "!(node_modules)\/**\/*.haml",
-        "!(node_modules)\/**\/*.md",
-        "!(node_modules)\/**\/*.kit"
+        "**\/*.html",
+        "**\/*.htm",
+        "**\/*.shtml",
+        "**\/*.xhtml",
+        "**\/*.php",
+        "**\/*.js",
+        "**\/*.ts",
+        "**\/*.coffee",
+        "**\/*.erb",
+        "**\/*.pug",
+        "**\/*.jade",
+        "**\/*.slim",
+        "**\/*.haml",
+        "**\/*.md",
+        "**\/*.kit"
       ],
       "removeFontFace" : 0,
       "removeKeyframes" : 0,
@@ -2600,7 +2612,7 @@
       "ENVIRONMENT:::$NODE_ENV"
     ],
     "rollupTreeshakingEnabled" : 1,
-    "skippedFoldersString" : "_cache, cache, \/html\/achievement\/data, \/html\/exam\/data, \/html\/frontmatter\/data, \/html\/index\/data, \/html\/lesson\/data, \/html\/membership\/data, \/html\/textbook\/data, log, _logs, logs, node_modules, \/src\/pug\/_dot, \/storage\/framework\/sessions, \/test, \/[v0.4.0], \/[v0.2.0], \/design",
+    "skippedFoldersString" : "\/html\/textbook\/data,\/storage\/framework\/sessions,_cache,_logs,node_modules,\/html\/achievement\/data,\/html\/index\/data,cache,\/html\/frontmatter\/data,\/backup,logs,\/design,\/[v0.2.0],\/html\/lesson\/data,\/test,\/.github,\/src\/pug\/_dot,\/[v0.4.0],\/html\/membership\/data,\/html\/exam\/data,log",
     "sourceFolderName" : "src",
     "susyVersion" : 3,
     "tsAllowSyntheticDefaultImports" : 0,
