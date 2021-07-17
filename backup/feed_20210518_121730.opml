@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<opml version="1.0">
+	<head>
+		<title>钱争予 在轻芒订阅的 Feed</title>
+	</head>
+	<body>
+		<outline text="播客" title="播客">
+			<outline htmlUrl="https://www.thetype.com/typechat/" text="字谈字畅" title="字谈字畅" type="rss" xmlUrl="https://www.thetype.com/typechat/feed/"/>
+		</outline>
+		<outline text="加星订阅" title="加星订阅"/>
+		<outline text="????" title="????"/>
+		<outline text="Photography" title="Photography">
+			<outline htmlUrl="http://imagedeconstructed.com/blog" text="The Image, Deconstructed - Examining the mental approach behind images" title="The Image, Deconstructed - Examining the mental approach behind images" type="rss" xmlUrl="http://imagedeconstructed.com/blog.xml"/>
+		</outline>
+		<outline text="Typography" title="Typography">
+			<outline htmlUrl="https://typotheque.com/rss" text="Typotheque" title="Typotheque" type="rss" xmlUrl="http://www.typotheque.com/rss"/>
+			<outline htmlUrl="http://tosche.net" text="Toshi Omagari" title="Toshi Omagari" type="rss" xmlUrl="http://tosche.net/feed/atom"/>
+			<outline htmlUrl="https://blogs.adobe.com/CCJKType" text="CJK Type Blog" title="CJK Type Blog" type="rss" xmlUrl="http://blogs.adobe.com/CCJKType/feed"/>
+			<outline htmlUrl="http://www.typetoken.net" text="typetoken®" title="typetoken®" type="rss" xmlUrl="http://www.typetoken.net/feed/"/>
+			<outline htmlUrl="https://www.paulshawletterdesign.com" text="Paul Shaw Letter Design" title="Paul Shaw Letter Design" type="rss" xmlUrl="http://www.paulshawletterdesign.com/feed/"/>
+			<outline htmlUrl="http://tamachan.jugem.jp/" text="tamalog" title="tamalog" type="rss" xmlUrl="http://tamachan.jugem.jp/?mode=rss"/>
+		</outline>
+		<outline text="未分类" title="未分类">
+			<outline htmlUrl="https://developer.apple.com/design/whats-new/" text="Design - What's New - Apple Developer" title="Design - What's New - Apple Developer" type="rss" xmlUrl="http://developer.apple.com/design/whats-new/rss/whats-new.rss"/>
+		</outline>
+	</body>
+</opml>
